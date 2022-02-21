@@ -1,0 +1,27 @@
+
+@mixin fontBold {
+    font-family: PingFangSC-Medium;
+    font-weight: bold;
+}
+
+@mixin font($fontSize: null, $color: null, $weight: null) {
+    @if $fontSize { font-size: $fontSize; }
+    @if $color { color: $color; }
+    @if $weight { font-weight: $weight; }
+}
+
+@mixin flex($align: null, $justify: null, $flex-direction: null, $flex-wrap: null) {
+    display: flex;
+    @if $align { align-items: $align };
+    @if $justify { justify-content: $justify };
+    @if $flex-direction { flex-direction: $flex-direction };
+    @if $flex-wrap { flex-wrap: $flex-wrap };
+}
+
+@mixin grid($columns: null, $rows: null, $column-gap: null, $row-gap: null ) {
+    display: grid;
+    @if $columns { grid-template-columns: $columns }
+    @if $rows { grid-template-rows: $rows }
+    @if $column-gap { column-gap: $column-gap }
+    @if $row-gap { row-gap: $row-gap }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "uniapp-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {},
+  "uni-app": {
+    "scripts": {
+      "dev": {
+        "title": "微信小程序dev",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin",
+          "APP_API_ENV": "development"
+        }
+      },
+      "test": {
+        "title": "微信小程序test",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin",
+          "APP_API_ENV": "testing"
+        }
+      },
+      "pro": {
+        "title": "微信小程序pro",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin",
+          "APP_API_ENV": "production"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "uview-ui": "^2.0.27"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulindev/uniapp-template.git"
+  },
+  "author": "yulin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulindev/uniapp-template/issues"
+  },
+  "homepage": "https://github.com/yulindev/uniapp-template#readme"
+}

@@ -1,0 +1,46 @@
+@import './variable.scss';
+@import './mixins.scss';
+@import './uview-ui.scss';
+
+page {
+  font-family: 'PingFangSC-Regular';
+  @include font(32rpx, #333);
+  background-color: #f2f3f5;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+// 隐藏小程序原生按钮
+.hide-native-button{
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	opacity: 0;
+	display: none;
+}
+
+.txt-one-line {
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-box-orient: horizontal;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  display: -webkit-box;
+}
+
+.tc{
+  text-align: center;;
+}
+
+.tr{
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.flex1 {
+  flex: 1;
+}

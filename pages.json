@@ -1,0 +1,65 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+		"^g-(.*)": "@/components/global/g-$1/index.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/workBench/index",
+			"style": {
+				"navigationBarTitleText": "工作台"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"subPackages": [
+        {
+          "root": "pages/login/sub",
+          "pages": [
+            {
+                "path": "register/index",
+                "style": {
+                    "navigationBarTitleText": "注册"
+                }
+            }
+          ]
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"backgroundColor": "#FFFFFF",
+		"color": "#000000",
+		"selectedColor": "#00c65d",
+		"list": [
+			{
+				"pagePath": "pages/workBench/index",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "工作台"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "",
+				"selectedIconPath": "",
+				"text": "我的"
+			}
+		]
+	}
+}
