@@ -1,14 +1,14 @@
 // 全部环境域名
 const domains = {
-  development: 'http://gw.ztyc-dev.com',
-  testing: 'http://gw.ztyc.com',
-  production: 'https://gw.ztocwst.com'
+  development: 'http://development.com',
+  testing: 'http://testing.com',
+  production: 'https://production.com'
 }
 
 const domainsFile = {
-  development: 'http://files.ztyc-dev.com',
-  testing: 'http://files.ztyc.com',
-  production: 'https://files.ztocwst.com'
+  development: 'http://development.com',
+  testing: 'http://testing.com',
+  production: 'https://production.com'
 }
 
 const ENV = process.env['APP_API_ENV']
