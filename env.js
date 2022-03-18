@@ -25,6 +25,6 @@ const domain = ENV ? domains[ENV] : domains[process.env.NODE_ENV]
 const domainFile = ENV ? domainsFile[ENV] : domainsFile[process.env.NODE_ENV]
 
 export default {
-  apiURL: `${domain}/edi/`,
+  apiURL: `${domain}/`,
   fileURL: `${domainFile}/`
 }
